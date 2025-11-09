@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Dinos tu Vibra Musical!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="ICONO.png">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>🎧 ¡Dinos tu Vibra Musical! 🎶</h1>
+        <h3>ITM</h3>
+        <form>
+
+            <label for="telefono">Tu número de celular (para contactarte si hacemos eventos):</label>
+            <input type="tel" id="telefono" placeholder="Ej: 312 456 7890" required>
+
+            <label for="edad">¿Qué edad tienes?</label>
+            <select id="edad" required>
+                <option value="">Selecciona una opción</option>
+                <option value="14-17">14-17 años</option>
+                <option value="18-22">18-22 años</option>
+                <option value="23-27">23-27 años</option>
+                <option value="28+">28 o más</option>
+            </select>
+
+            <label for="genero">¿Qué género musical te prende más?</label>
+            <select id="genero" required>
+                <option value="">Selecciona una opción</option>
+                <option>Reggaetón </option>
+                <option>Pop </option>
+                <option>Rock </option>
+                <option>Urbano / Trap </option>
+                <option>Vallenato </option>
+                <option>Salsa </option>
+                <option>Gospel </option>
+                <option>Otro</option>
+            </select>
+
+            <label for="frecuencia">¿Con qué frecuencia escuchas música?</label>
+            <select id="frecuencia" required>
+                <option value="">Selecciona una opción</option>
+                <option>Todo el día </option>
+                <option>Varias horas al día ⏱</option>
+                <option>Solo a veces </option>
+                <option>Casi nunca </option>
+            </select>
+
+            <label for="momento">¿Cuándo la música te hace sentir más vivo?</label>
+            <select id="momento" required>
+                <option value="">Selecciona una opción</option>
+                <option>Cuando voy caminando </option>
+                <option>Antes de dormir </option>
+                <option>En el gym </option>
+                <option>Mientras estudio </option>
+                <option>De fiesta</option>
+            </select>
+
+            <label for="conciertos">¿Te animas a ir a conciertos?</label>
+            <select id="conciertos" required>
+                <option value="">Selecciona una opción</option>
+                <option>Sí, ¡me encantan!</option>
+                <option>Depende del artista </option>
+                <option>No soy muy fan de multitudes </option>
+            </select>
+
+            <label for="grupo">Si creamos un grupo musical o playlist, ¿te unes?</label>
+            <select id="grupo" required>
+                <option value="">Selecciona una opción</option>
+                <option>¡Obvio sí!</option>
+                <option>Tal vez lo pienso </option>
+                <option>No, paso por ahora</option>
+            </select>
+
+            <button type="submit">Enviar 🎵</button>
+        </form>
+    </div>
+
+    <!-- Cargar librería Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Tu script -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

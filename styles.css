@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0D0D0D 30%, #735848 100%);
+    margin: 0;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #0D0D0D;
+}
+
+.form-container {
+    background: #BF978E;
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #735848;
+    font-size: 22px;
+    font-weight: bold;
+}
+h3{
+      text-align: center;
+    color: #735848;
+    font-size: 10px;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #0D0D0D;
+}
+
+select, input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 2px solid #735848;
+    background: #fff;
+    color: #0D0D0D;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+select:focus, input[type="tel"]:focus {
+    border-color: #F2380F;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #F2380F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #F24405;
+}
